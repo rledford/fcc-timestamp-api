@@ -2,7 +2,7 @@ var express = require("express");
 var path = require("path");
 var app = express();
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5000;
 
 app.get("/", function(req, res){
     res.sendFile(path.join(__dirname+"/index.html"));
